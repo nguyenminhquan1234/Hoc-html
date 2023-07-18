@@ -1,0 +1,43 @@
+!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            html, body {
+                margin: 0;
+            }
+
+            .header {
+                width: calc(500% + 500%);
+                height: 1000vh;                
+                background: rgb(200, 200, 200);
+            }
+
+            .box::after {
+                content: attr(data-title);
+            }
+
+            a::after {
+                content:" ("attr(href)")";
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box" title="đây là box "></div>
+
+        <a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblRrcHo2QmY1N3ZNVHl2Z2JjdU1VSTNGRHBaUXxBQ3Jtc0ttbTA1RlRYYUVEalZjR0cyN2Y3LWpWOVhfaHpsWkEtVzdUbUtwNVlGdVhESHc5MXhOd3FBR3NDOEJ6Tnc0NDYyeU1wV3g3UFN6aTljZkhvUFV6QU9GNE9ucXdZQjZGdFFLOW1RVVBKNkNPN3FpLXJGZw&q=http%3A%2F%2Ffullstack.edu.com.vn%2F&v=LZfoRgIYw2s">Học lập trình</a>
+
+        <h1>CSS function</h1>
+        <ul>
+            <li>var()</li>
+            <li>linear-gradient()</li>
+            <li>rgba()</li>
+            <li>rgb()</li>
+            <li>calc()</li>
+            <li>attr()</li>
+        </ul>
+    </body>
+</html>
