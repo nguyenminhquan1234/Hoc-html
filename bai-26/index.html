@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            html, body {
+                margin: 0;
+            }
+
+            .box {
+                width: 1000px;
+                height: 1000vh;                
+                background:rgb(200, 200, 200);
+            }
+
+            h1::selection {
+                background-color: blue;
+                color: #000;
+            }
+
+            
+
+            .box::before {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 100px;
+                background-color: aliceblue;
+            }
+
+            .box::after {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 100px;
+                background-color: aliceblue;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="box"></div>
+
+        <h1>CSS pseudo-elememts <br /> Dòng thứ 2 </h1>
+        <ul>
+            <li>::before</li>
+            <li>::after</li>
+            <li>::first-letter</li>
+            <li>::first-line</li>
+            <li>::selection</li>
+        </ul>
+    </body>
+</html>
